@@ -39,7 +39,7 @@ describe('Tic Tac Toe testing', () => {
     cy.get('[data-testid="status"]').should('have.text', 'Winner: X');
   });
 
-  it.only('Should game reset', () => {
+  it('Should game reset', () => {
     cy.get('.square').eq(0).click(); //x
     cy.get('.square').eq(1).click();// 0
     cy.get('.square').eq(3).click();// x
